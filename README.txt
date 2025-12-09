@@ -83,16 +83,18 @@ INSERT INTO permissao (id, descricao) VALUES (1, 'VIZUALIZAR_PROCEDIMENTO');
 INSERT INTO permissao (id, descricao) VALUES (2, 'VIZUALIZAR_PACIENTE');
 INSERT INTO permissao (id, descricao) VALUES (3, 'VIZUALIZAR_DASH');
 
+--IMPORTANTE CRIAR O USUARIO VIA CADASTRO NA TELA DE LOGIN OU VIA INSOMINIA UTILIZANDO A ROTA http://localhost:3002/novousuario E OS PARAMENTROS 'nome','email','senha'
+--PARA A SENHA CRIPTOGRAFADA FUNCIONAR NAO PODE SER CRIADO O USUARIO DIRETO PELO BANCO, NAO DA CERTO A AUTENTICAÇAO
 
 INSERT INTO usuario_permissao (email, id_permissao) VALUES
-('laura@eduarda.com', 1);
+('laura@eduarda.com', 1); --ALTERAR PELO EMAIL CADASTRADO
 
 
 INSERT INTO usuario_permissao (email, id_permissao) VALUES
-('laura@eduarda.com', 2);
+('laura@eduarda.com', 2); --ALTERAR PELO EMAIL CADASTRADO
 
 INSERT INTO usuario_permissao (email, id_permissao) VALUES
-('laura@eduarda.com', 3);
+('laura@eduarda.com', 3); --ALTERAR PELO EMAIL CADASTRADO
 
 INSERT INTO pacientes (nome, telefone, email, cpf) VALUES
 ('Carlos Almeida', '11987654321', 'carlos@gmail.com', '123.456.789-00'),
@@ -112,6 +114,7 @@ VALUES
 (1, 1, '2025-12-2 09:00:00', 'concluido', 'Primeira consulta.', 1),
 (2, 2, '2025-12-3 14:30:00', 'pago', NULL, 2),
 (3, 3, '2025-12-4 11:00:00', 'pago', 'Paciente já realizou avaliação.', 2);
+
 
 
 
